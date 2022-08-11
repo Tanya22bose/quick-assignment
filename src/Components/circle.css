@@ -1,0 +1,76 @@
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  margin-top: 60px;
+  margin-left: 580px;
+}
+
+.content {
+  align-items: center;
+  width: 400px;
+}
+
+.progressbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.progressbar::before {
+  content: "";
+  position: absolute;
+  background-color: #e0e0e0;
+  top: 50%;
+  left: 0%;
+  height: 2px;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  width: 100%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.progress {
+  position: absolute;
+  background-color: rgb(85, 49, 216);
+  top: 50%;
+  left: 0%;
+  height: 2px;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  width: 50%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #fff;
+  color: rgb(51, 38, 38);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  transition: 0.4s ease;
+}
+
+.active {
+  color: #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+  background-color: rgb(85, 49, 216);
+  border: 1px solid rgb(85, 49, 216);
+}
